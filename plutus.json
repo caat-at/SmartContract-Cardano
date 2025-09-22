@@ -1,0 +1,375 @@
+{
+  "preamble": {
+    "title": "tu-usuario/cacao_traceability",
+    "description": "Smart contract for cacao traceability on Cardano",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.19+e525483"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "cacao_traceability.cacao_traceability.spend",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/cacao_traceability~1types~1TraceabilityDatum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/cacao_traceability~1types~1TraceabilityRedeemer"
+        }
+      },
+      "compiledCode": "59076701010029800aba2aba1aba0aab9faab9eaab9dab9a488888896600264653001300800198041804800cdc3a400530080024888966002600460106ea800e3300130093754007370e90004dc3a4011370e90024dc3a400d300837540089111111919912cc004c020012264b30013017001899192cc004c02c0062b3001301537540050058b202c8acc004c0380062b3001301537540050058b202c8acc004c0240062b3001301537540050058b202c8acc004c0200062b3001301537540050058b202c8acc004c0280062b3001301537540050058b202c8acc004cdc3a4014003159800980a9baa002802c590164590132026404c8099013202630133754002602c00316405060246ea80362b3001300b0048992cc004c05c006264b3001300a30133754003132323232323298009bae301d0019bae301d0069bad301d0059bad301d0049bad301d0039bad301d002488888966002604800f0108b2042180e800980e000980d800980d000980c800980a1baa0018b202430160018b20283012375401b159800980300244c966002602e00313259800980518099baa0018991919191919194c004c966002603800315980099b8948010c06c0062d13015301b00140691640746ea8c0780066eb8c07801e6eb8c0780166eb8c0780126eb4c07800e6eb4c078009222222598009812803c4c8c966002603200315980098119baa002809c590244566002603800315980098119baa002809c590244566002602e00315980098119baa002809c590244566002602c00315980098119baa002809c59024459021204240848108c084dd500098120064590220c078004c074004c070004c06c004c068004c064004c050dd5000c59012180b000c5901418091baa00d8acc004c01401226464b300130180028024590151bae30160013012375401b159800980380244c966002602e00313259800980518099baa0018991919194c004dd7180d800cdd6980d8024dd6980d801cdd7180d80124444b3001302000580645901d0c06c004c068004c064004c050dd5000c59012180b000c5901418091baa00d8b2020404080810102020159800980318079baa0018cc004c04cc040dd5000c88c8cc00400400c896600200314a115980099b8f375c602e00200714a31330020023018001404880aa46028602a003230143015301530150019180a180a980a800cc03cdd5005c8c050c054c054c054c054005222222259800980680144c8cc896600260200051598009809980c9baa301d301e0038a51800a0308acc004c04c00a2b3001300e30193754603a603c00714a3001406115980098070014566002601a60326ea8c074c07800e294600280c22b3001300d0028acc004c03cc064dd5180e980f001c66002b30013758600860346ea8c074c068dd50054528c5282036a50a51406100140611598009807801456600266e1d200a30193754603a603c00714a30014061001406080c101820304060602e6ea8c06c0045281980c9802980b9baa301a3017375400e660326034602e6ea80492f5c1159800980800144c96600266ebcc018c060dd5180d980c1baa0084c0103d87c80008acc004cdc4240006eb4c010c060dd5000c56600266e252002375a600a60306ea80062b3001337126eb4c014c060dd5000a402915980099b8948000dd69801180c1baa0018acc004cdc49bad300230183754002906400c4cc896600266e20008006266e20cdc0001241019d123c00314a080c0dd69802180c1baa301b301837540106eb4c018c060dd5000c528202c8a50405914a080b229410164528202c8a5040586034602e6ea804a2b3001300b0028992cc004cdc79bae3004301837540026eb8c06cc060dd5180d980c1baa0088acc004c044c05cdd5180d980e180e180e180e180e180e180c1baa0018acc004cc01cdd6180d980c1baa010375c600a60306ea80063300132330010013758600660326ea8c070c064dd5004912cc00400629422b30013375e603a002601060346ea800e2946266004004603c00280c101b528528a02c8a50405914a080b22941016180d180b9baa0128acc004c02800a264b3001980099b8f001375c600c60306ea802294294501645660026600e6eb0c06cc060dd50081bae300630183754011159800998039bac301b301837540200031980099baf300630183754603660306ea8021300103d87c8000a50a51405914a080b229410164528202c375c6034602e6ea804a264b3001330073758603660306ea8040dd71803180c1baa0088acc0056600266e2520ffa9ea55375a603660306ea80062b3001337126eb4c06cc060dd5000a410155d4ab15980099b89483ff4f52ac04dd69803180c1baa0018acc004cdc49bad30063018375400290406a6a5580c56600330013371e6eb8c014c060dd5000a44100a50a5140591980099b8f375c600860306ea800522100a50a51405914a080b229410164528202c8a50405914a080b22b30013375e600c60306ea8c06cc060dd5004260103d87980008a51899baf300630183754603660306ea802130103d87a8000405914a080b22941016180d180b9baa012405480a9015202a45900e180980398091809803229410070c020004c00cdd5004452689b2b200201",
+      "hash": "3d47ff9a376f781850621e80bf055bc27e340a30e1467c563521a73a"
+    },
+    {
+      "title": "cacao_traceability.cacao_traceability.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "59076701010029800aba2aba1aba0aab9faab9eaab9dab9a488888896600264653001300800198041804800cdc3a400530080024888966002600460106ea800e3300130093754007370e90004dc3a4011370e90024dc3a400d300837540089111111919912cc004c020012264b30013017001899192cc004c02c0062b3001301537540050058b202c8acc004c0380062b3001301537540050058b202c8acc004c0240062b3001301537540050058b202c8acc004c0200062b3001301537540050058b202c8acc004c0280062b3001301537540050058b202c8acc004cdc3a4014003159800980a9baa002802c590164590132026404c8099013202630133754002602c00316405060246ea80362b3001300b0048992cc004c05c006264b3001300a30133754003132323232323298009bae301d0019bae301d0069bad301d0059bad301d0049bad301d0039bad301d002488888966002604800f0108b2042180e800980e000980d800980d000980c800980a1baa0018b202430160018b20283012375401b159800980300244c966002602e00313259800980518099baa0018991919191919194c004c966002603800315980099b8948010c06c0062d13015301b00140691640746ea8c0780066eb8c07801e6eb8c0780166eb8c0780126eb4c07800e6eb4c078009222222598009812803c4c8c966002603200315980098119baa002809c590244566002603800315980098119baa002809c590244566002602e00315980098119baa002809c590244566002602c00315980098119baa002809c59024459021204240848108c084dd500098120064590220c078004c074004c070004c06c004c068004c064004c050dd5000c59012180b000c5901418091baa00d8acc004c01401226464b300130180028024590151bae30160013012375401b159800980380244c966002602e00313259800980518099baa0018991919194c004dd7180d800cdd6980d8024dd6980d801cdd7180d80124444b3001302000580645901d0c06c004c068004c064004c050dd5000c59012180b000c5901418091baa00d8b2020404080810102020159800980318079baa0018cc004c04cc040dd5000c88c8cc00400400c896600200314a115980099b8f375c602e00200714a31330020023018001404880aa46028602a003230143015301530150019180a180a980a800cc03cdd5005c8c050c054c054c054c054005222222259800980680144c8cc896600260200051598009809980c9baa301d301e0038a51800a0308acc004c04c00a2b3001300e30193754603a603c00714a3001406115980098070014566002601a60326ea8c074c07800e294600280c22b3001300d0028acc004c03cc064dd5180e980f001c66002b30013758600860346ea8c074c068dd50054528c5282036a50a51406100140611598009807801456600266e1d200a30193754603a603c00714a30014061001406080c101820304060602e6ea8c06c0045281980c9802980b9baa301a3017375400e660326034602e6ea80492f5c1159800980800144c96600266ebcc018c060dd5180d980c1baa0084c0103d87c80008acc004cdc4240006eb4c010c060dd5000c56600266e252002375a600a60306ea80062b3001337126eb4c014c060dd5000a402915980099b8948000dd69801180c1baa0018acc004cdc49bad300230183754002906400c4cc896600266e20008006266e20cdc0001241019d123c00314a080c0dd69802180c1baa301b301837540106eb4c018c060dd5000c528202c8a50405914a080b229410164528202c8a5040586034602e6ea804a2b3001300b0028992cc004cdc79bae3004301837540026eb8c06cc060dd5180d980c1baa0088acc004c044c05cdd5180d980e180e180e180e180e180e180c1baa0018acc004cc01cdd6180d980c1baa010375c600a60306ea80063300132330010013758600660326ea8c070c064dd5004912cc00400629422b30013375e603a002601060346ea800e2946266004004603c00280c101b528528a02c8a50405914a080b22941016180d180b9baa0128acc004c02800a264b3001980099b8f001375c600c60306ea802294294501645660026600e6eb0c06cc060dd50081bae300630183754011159800998039bac301b301837540200031980099baf300630183754603660306ea8021300103d87c8000a50a51405914a080b229410164528202c375c6034602e6ea804a264b3001330073758603660306ea8040dd71803180c1baa0088acc0056600266e2520ffa9ea55375a603660306ea80062b3001337126eb4c06cc060dd5000a410155d4ab15980099b89483ff4f52ac04dd69803180c1baa0018acc004cdc49bad30063018375400290406a6a5580c56600330013371e6eb8c014c060dd5000a44100a50a5140591980099b8f375c600860306ea800522100a50a51405914a080b229410164528202c8a50405914a080b22b30013375e600c60306ea8c06cc060dd5004260103d87980008a51899baf300630183754603660306ea802130103d87a8000405914a080b22941016180d180b9baa012405480a9015202a45900e180980398091809803229410070c020004c00cdd5004452689b2b200201",
+      "hash": "3d47ff9a376f781850621e80bf055bc27e340a30e1467c563521a73a"
+    }
+  ],
+  "definitions": {
+    "Bool": {
+      "title": "Bool",
+      "anyOf": [
+        {
+          "title": "False",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "True",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        }
+      ]
+    },
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "List$cacao_traceability/types/CertificationType": {
+      "dataType": "list",
+      "items": {
+        "$ref": "#/definitions/cacao_traceability~1types~1CertificationType"
+      }
+    },
+    "List$cacao_traceability/types/HarvestRecord": {
+      "dataType": "list",
+      "items": {
+        "$ref": "#/definitions/cacao_traceability~1types~1HarvestRecord"
+      }
+    },
+    "cacao_traceability/types/Certification": {
+      "title": "Certification",
+      "anyOf": [
+        {
+          "title": "Certification",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "cert_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "cert_type",
+              "$ref": "#/definitions/cacao_traceability~1types~1CertificationType"
+            },
+            {
+              "title": "lot_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "issued_by",
+              "$ref": "#/definitions/cacao_traceability~1types~1PubKeyHash"
+            },
+            {
+              "title": "issue_date",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "expiry_date",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "verified",
+              "$ref": "#/definitions/Bool"
+            }
+          ]
+        }
+      ]
+    },
+    "cacao_traceability/types/CertificationType": {
+      "title": "CertificationType",
+      "anyOf": [
+        {
+          "title": "Organic",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "FairTrade",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        },
+        {
+          "title": "RainforestAlliance",
+          "dataType": "constructor",
+          "index": 2,
+          "fields": []
+        },
+        {
+          "title": "UTZ",
+          "dataType": "constructor",
+          "index": 3,
+          "fields": []
+        }
+      ]
+    },
+    "cacao_traceability/types/HarvestRecord": {
+      "title": "HarvestRecord",
+      "anyOf": [
+        {
+          "title": "HarvestRecord",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "harvest_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "harvest_date",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "quantity_kg",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "quality_grade",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "moisture_level",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "harvester",
+              "$ref": "#/definitions/cacao_traceability~1types~1PubKeyHash"
+            }
+          ]
+        }
+      ]
+    },
+    "cacao_traceability/types/Location": {
+      "title": "Location",
+      "anyOf": [
+        {
+          "title": "Location",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "latitude",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "longitude",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "region",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "farm_name",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "cacao_traceability/types/LotInfo": {
+      "title": "LotInfo",
+      "anyOf": [
+        {
+          "title": "LotInfo",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "lot_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "status",
+              "$ref": "#/definitions/cacao_traceability~1types~1PlantationStatus"
+            },
+            {
+              "title": "plantation_date",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "location",
+              "$ref": "#/definitions/cacao_traceability~1types~1Location"
+            },
+            {
+              "title": "certifications",
+              "$ref": "#/definitions/List$cacao_traceability~1types~1CertificationType"
+            },
+            {
+              "title": "harvest_records",
+              "$ref": "#/definitions/List$cacao_traceability~1types~1HarvestRecord"
+            }
+          ]
+        }
+      ]
+    },
+    "cacao_traceability/types/PlantationStatus": {
+      "title": "PlantationStatus",
+      "anyOf": [
+        {
+          "title": "Planted",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "Growing",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        },
+        {
+          "title": "Flowering",
+          "dataType": "constructor",
+          "index": 2,
+          "fields": []
+        },
+        {
+          "title": "Harvesting",
+          "dataType": "constructor",
+          "index": 3,
+          "fields": []
+        },
+        {
+          "title": "Certified",
+          "dataType": "constructor",
+          "index": 4,
+          "fields": []
+        },
+        {
+          "title": "Processed",
+          "dataType": "constructor",
+          "index": 5,
+          "fields": []
+        }
+      ]
+    },
+    "cacao_traceability/types/PubKeyHash": {
+      "title": "PubKeyHash",
+      "dataType": "bytes"
+    },
+    "cacao_traceability/types/TraceabilityDatum": {
+      "title": "TraceabilityDatum",
+      "anyOf": [
+        {
+          "title": "TraceabilityDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "lot",
+              "$ref": "#/definitions/cacao_traceability~1types~1LotInfo"
+            },
+            {
+              "title": "current_owner",
+              "$ref": "#/definitions/cacao_traceability~1types~1PubKeyHash"
+            },
+            {
+              "title": "creation_date",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "cacao_traceability/types/TraceabilityRedeemer": {
+      "title": "TraceabilityRedeemer",
+      "anyOf": [
+        {
+          "title": "UpdateStatus",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "new_status",
+              "$ref": "#/definitions/cacao_traceability~1types~1PlantationStatus"
+            }
+          ]
+        },
+        {
+          "title": "AddHarvest",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": [
+            {
+              "title": "harvest",
+              "$ref": "#/definitions/cacao_traceability~1types~1HarvestRecord"
+            }
+          ]
+        },
+        {
+          "title": "AddCertification",
+          "dataType": "constructor",
+          "index": 2,
+          "fields": [
+            {
+              "title": "certification",
+              "$ref": "#/definitions/cacao_traceability~1types~1Certification"
+            }
+          ]
+        },
+        {
+          "title": "TransferOwnership",
+          "dataType": "constructor",
+          "index": 3,
+          "fields": [
+            {
+              "title": "new_owner",
+              "$ref": "#/definitions/cacao_traceability~1types~1PubKeyHash"
+            }
+          ]
+        },
+        {
+          "title": "UpdateLocation",
+          "dataType": "constructor",
+          "index": 4,
+          "fields": [
+            {
+              "title": "new_location",
+              "$ref": "#/definitions/cacao_traceability~1types~1Location"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+﻿name = "tu-usuario/cacao_traceability"
+version = "0.0.0"
+license = "Apache-2.0"
+description = "Smart contract for cacao traceability on Cardano"
+
+[repository]
+user = "caat-at"
+project = "cacao_traceability"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "v2.0.0"
+source = "github"
+
+
+
