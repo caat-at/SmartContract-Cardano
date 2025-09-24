@@ -171,7 +171,7 @@ Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 ## 👨‍💻 Autor
 
-caat-at
+Carlos Aristizabal
 
 - Ingeniero de Sistemas
 - Desarrollador Blockchain
