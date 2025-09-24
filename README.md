@@ -26,12 +26,18 @@ Este proyecto implementa un sistema descentralizado de trazabilidad para el cult
 
 
 ├── validators/
+
 │ └── cacao_traceability.ak # Validador principal
+
 ├── lib/
+
 │ └── cacao_traceability/
+
 │ ├── types.ak # Definiciones de tipos
 │ └── utils.ak # Funciones de utilidad
+
 ├── aiken.toml # Configuración del proyecto
+
 └── README.md # Este archivo
 
 
