@@ -165,8 +165,9 @@ Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 ## 👨‍💻 Autor
 
-**caat-at**
-- Estudiante de Derecho
+caat-at
+
+- Ingeniero de Sistemas
 - Desarrollador Blockchain
 - GitHub: [@caat-at](https://github.com/caat-at)
 
